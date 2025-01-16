@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metas 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-800">
+  <div class="container mx-auto p-6">
+    <!-- Título -->
+    <h1 class="text-4xl font-bold text-center mb-8 text-blue-700"> ! Suas metas para 2025 !</h1>
+
+    <!-- Campo para adicionar metas -->
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
+      <div class="flex mb-4">
+        <input 
+          id="goalInput" 
+          type="text" 
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 mr-2" 
+          placeholder="Adicione uma meta para 2025"
+        />
+        <button 
+          id="addGoalButton" 
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+        >
+          Adicionar
+        </button>
+      </div>
+      <p class="text-sm text-gray-500">Escreva aqui suas metas e acompanhe-as ao longo do ano!</p>
+    </div>
+
+    <!-- Lista de metas -->
+    <ul id="goalList" class="mt-6 max-w-lg mx-auto space-y-3">
+      <!-- As metas aparecerão aqui -->
+    </ul>
+  </div>
+
+  <!-- Importando o script -->
+  <script src="app.js"></script>
+</body>
+</html>
